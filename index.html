@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Avery Ranney — Materials & Metrology Lab Technician</title>
+  <meta name="description" content="Avery Ranney — materials, metrology, and QC lab technician with 9+ years in regulated manufacturing. XRD, XRF, TGA, Instron, calibration, SOPs, and data review.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #152033;
+      --muted: #5d6777;
+      --line: #dfe4ea;
+      --paper: #f7f8fa;
+      --card: #ffffff;
+      --accent: #0f766e;
+      --accent-soft: #e7f3f1;
+      --navy: #14213d;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { width: min(1040px, calc(100% - 40px)); margin: 0 auto; }
+
+    header.hero {
+      background: #fff;
+      border-bottom: 1px solid var(--line);
+    }
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 190px 1fr;
+      gap: 44px;
+      align-items: center;
+      padding: 58px 0 48px;
+    }
+    .portrait {
+      width: 190px;
+      height: 190px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center 28%;
+      border: 6px solid #fff;
+      box-shadow: 0 8px 28px rgba(20,33,61,.14);
+      background: #dce3ea;
+    }
+    .eyebrow {
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 0 0 10px;
+    }
+    h1 {
+      font-family: "Source Serif 4", Georgia, serif;
+      font-size: clamp(2.35rem, 5vw, 3.7rem);
+      line-height: 1.04;
+      margin: 0 0 10px;
+      letter-spacing: -.02em;
+      color: var(--navy);
+    }
+    .headline {
+      font-size: 1.12rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin: 0 0 14px;
+      max-width: 660px;
+    }
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+      color: var(--muted);
+      font-size: .94rem;
+      margin: 0;
+    }
+    .contact span { display: inline-flex; align-items: center; gap: 7px; }
+    .contact svg { width: 15px; height: 15px; flex: 0 0 auto; }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 11px 16px;
+      border-radius: 8px;
+      font-size: .92rem;
+      font-weight: 600;
+      line-height: 1;
+      border: 1px solid var(--navy);
+      color: #fff;
+      background: var(--navy);
+    }
+    .btn:hover { text-decoration: none; background: #0c1730; }
+    .btn.secondary { background: #fff; color: var(--navy); }
+    .btn.secondary:hover { background: #f2f5f8; }
+    .btn svg { width: 15px; height: 15px; }
+
+    main { padding: 44px 0 64px; }
+    section { padding: 34px 0; border-bottom: 1px solid var(--line); }
+    section:last-of-type { border-bottom: 0; }
+    .section-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 18px;
+    }
+    h2 {
+      font-family: "Source Serif 4", Georgia, serif;
+      font-size: 1.55rem;
+      line-height: 1.2;
+      margin: 0;
+      color: var(--navy);
+      letter-spacing: -.01em;
+    }
+    .section-note { font-size: .85rem; color: var(--muted); }
+    .lede { max-width: 850px; font-size: 1.02rem; color: #364255; margin: 0; }
+
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 22px;
+    }
+    .card h3 { margin: 0 0 6px; font-size: 1rem; color: var(--navy); }
+    .card p { margin: 0; color: var(--muted); font-size: .94rem; }
+    .tag {
+      display: inline-block;
+      margin: 0 6px 6px 0;
+      padding: 5px 9px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: #0a5c56;
+      font-size: .79rem;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    .skill-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .skill-group { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 20px 22px; }
+    .skill-group h3 { margin: 0 0 10px; font-size: .92rem; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); }
+    .skill-group p { margin: 0; color: #364255; font-size: .94rem; }
+
+    .case {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--accent);
+      border-radius: 10px;
+      padding: 22px 24px;
+      margin-bottom: 16px;
+    }
+    .case h3 { margin: 0 0 8px; font-size: 1.04rem; color: var(--navy); }
+    .case p { margin: 0 0 8px; color: #3d495b; font-size: .95rem; }
+    .case p:last-child { margin-bottom: 0; }
+    .case b { color: var(--ink); }
+
+    .role {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 22px;
+      padding: 18px 0;
+      border-top: 1px solid var(--line);
+    }
+    .role:first-of-type { border-top: 0; padding-top: 0; }
+    .role .dates { color: var(--muted); font-size: .84rem; font-weight: 600; padding-top: 2px; }
+    .role h3 { margin: 0 0 2px; font-size: 1.02rem; color: var(--navy); }
+    .role .company { color: var(--accent); font-weight: 600; font-size: .93rem; margin: 0 0 8px; }
+    .role ul { margin: 0; padding-left: 18px; color: #3d495b; font-size: .94rem; }
+    .role li { margin: 0 0 5px; }
+
+    .edu { display: grid; grid-template-columns: 150px 1fr; gap: 22px; }
+    .edu .dates { color: var(--muted); font-size: .84rem; font-weight: 600; }
+    .edu h3 { margin: 0 0 2px; font-size: 1.02rem; color: var(--navy); }
+    .edu p { margin: 0; color: var(--muted); font-size: .93rem; }
+
+    footer { padding: 30px 0 42px; color: var(--muted); font-size: .84rem; }
+    footer .wrap { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+
+    @media (max-width: 760px) {
+      .hero-inner { grid-template-columns: 1fr; gap: 24px; padding: 38px 0 34px; }
+      .portrait { width: 142px; height: 142px; }
+      .grid-2, .skill-grid { grid-template-columns: 1fr; }
+      .role, .edu { grid-template-columns: 1fr; gap: 4px; }
+      .section-head { display: block; }
+      .section-note { margin-top: 4px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap hero-inner">
+      <img class="portrait" src="portrait.jpg" alt="Avery Ranney">
+      <div>
+        <p class="eyebrow">Materials · Metrology · Quality Control</p>
+        <h1>Avery Ranney</h1>
+        <p class="headline">Materials &amp; Metrology Lab Technician with 9+ years in regulated manufacturing.</p>
+        <p class="contact">
+          <span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 1 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            Halethorpe, Maryland
+          </span>
+          <span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            <a href="mailto:agranney94@gmail.com">agranney94@gmail.com</a>
+          </span>
+          <span>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1 0-5ZM3 9.5h4V21H3V9.5Zm6.5 0h3.8v1.6h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.1c0-1.22-.02-2.8-1.7-2.8-1.7 0-1.96 1.33-1.96 2.7V21h-4V9.5Z"/></svg>
+            <a href="https://www.linkedin.com/in/avery-ranney/" target="_blank" rel="noopener">linkedin.com/in/avery-ranney</a>
+          </span>
+        </p>
+        <div class="actions">
+          <a class="btn" href="Avery-Ranney-Resume-Materials-Testing.pdf" download>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+            Download Resume
+          </a>
+          <a class="btn secondary" href="https://www.linkedin.com/in/avery-ranney/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="about">
+      <div class="section-head">
+        <h2>Profile</h2>
+        <span class="section-note">Materials testing · Calibration · QC</span>
+      </div>
+      <p class="lede">
+        Hands-on materials and QC laboratory professional with 9+ years in regulated manufacturing. I perform physical, mechanical, and thermal testing on in-process, finished-product, and R&amp;D samples; operate and maintain XRD, XRF, TGA, Mastersizer, and Instron instruments; and document results in GLIMS and Labware. My work includes sample and standard preparation, calibration and preventive maintenance, troubleshooting, specification review, out-of-spec escalation, SOP authoring, and staff training.
+      </p>
+    </section>
+
+    <section id="instrumentation">
+      <div class="section-head">
+        <h2>Instrumentation &amp; Testing</h2>
+        <span class="section-note">Hands-on, not just familiar</span>
+      </div>
+      <div class="skill-grid">
+        <div class="skill-group">
+          <h3>Thermal &amp; Mechanical</h3>
+          <p>TGA · Instron · bend/break/snap strength · thermal stability · tensile-style mechanical testing · load and extension data</p>
+        </div>
+        <div class="skill-group">
+          <h3>Elemental &amp; Structural</h3>
+          <p>XRD · XRF · phase and elemental analysis · Camsizer P4 · Mastersizer · particle-size distribution · screen testing</p>
+        </div>
+        <div class="skill-group">
+          <h3>Physical &amp; Wet Chemistry</h3>
+          <p>pH · TV@1750 · total volatiles · viscosity · color · sample preparation · standards and reagent preparation</p>
+        </div>
+        <div class="skill-group">
+          <h3>Quality &amp; Data</h3>
+          <p>Calibration and preventive maintenance · performance verification · troubleshooting · data review · out-of-spec escalation · GLIMS · Labware · Excel</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="work">
+      <div class="section-head">
+        <h2>Selected Work</h2>
+        <span class="section-note">Two examples from the lab</span>
+      </div>
+
+      <article class="case">
+        <h3>DVVA method and SOP — built from scratch</h3>
+        <p><b>Problem:</b> Two older tests were slower, messier, and less safe than they needed to be.</p>
+        <p><b>Action:</b> Wrote a replacement SOP covering scope, purpose, instruments, procedure, troubleshooting, and efficacy graphs against a known standard.</p>
+        <p><b>Result:</b> Replaced two older tests and improved speed, cleanliness, and safety.</p>
+      </article>
+
+      <article class="case">
+        <h3>Camsizer P4 Excel parser — cleaner data review</h3>
+        <p><b>Problem:</b> Manual copy and formatting steps created mismatches and avoidable errors.</p>
+        <p><b>Action:</b> Built an Excel VLOOKUP parser that matched software output and flagged unmatched records; maintained the lab’s master calculator.</p>
+        <p><b>Result:</b> Reduced copy/format errors and made data review faster and more reliable.</p>
+      </article>
+    </section>
+
+    <section id="experience">
+      <div class="section-head">
+        <h2>Experience</h2>
+        <span class="section-note">Regulated manufacturing labs</span>
+      </div>
+
+      <div class="role">
+        <div class="dates">Apr 2019 – Present</div>
+        <div>
+          <h3>QA / Chemical Lab Technician</h3>
+          <p class="company">W.R. Grace &amp; Co. · Baltimore, MD</p>
+          <ul>
+            <li>Perform physical, mechanical, and thermal testing on in-process, finished-product, and R&amp;D samples.</li>
+            <li>Operate, calibrate, and maintain XRD, XRF, TGA, Mastersizer, Instron, Camsizer, pH, and TV@1750 instruments.</li>
+            <li>Prepare samples and standards, review data for specification compliance, and escalate out-of-spec results.</li>
+            <li>Author and revise SOPs; train staff on testing, SOPs, and LIMS; maintain traceable records in GLIMS and Labware.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="role">
+        <div class="dates">Dec 2018 – Apr 2019</div>
+        <div>
+          <h3>Quality Assurance &amp; R&amp;D Technician</h3>
+          <p class="company">Adell Plastics · Baltimore, MD</p>
+          <ul>
+            <li>Ran time-critical QC testing on plastic batches every two hours: total volatiles, bend/break/snap strength, color, and viscosity.</li>
+            <li>Escalated out-of-spec results to manufacturing leadership and supported re-testing and follow-up.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="role">
+        <div class="dates">Jun 2017 – Sep 2018</div>
+        <div>
+          <h3>Factory Quality Assurance Technician</h3>
+          <p class="company">Eurofins Lancaster Laboratories · Nashville, TN</p>
+          <ul>
+            <li>Performed line-side QA checks for packaging, fill weight, labels, lids, shrink wrap, cases, and product-specific can bottoms.</li>
+            <li>Exercised stop-work authority when specifications failed and documented the defect and rationale.</li>
+            <li>Performed routine instrument calibration and maintenance; maintained calibration records to quality-system requirements.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="section-head">
+        <h2>Education</h2>
+        <span class="section-note">Frostburg State University</span>
+      </div>
+      <div class="edu">
+        <div class="dates">2013 – 2017</div>
+        <div>
+          <h3>B.S. Biology</h3>
+          <p>Frostburg State University · GPA 3.43</p>
+          <p>Tri-Beta Biology Honor Society · Gamma Sigma Epsilon Chemistry Honor Society · Dean’s List · Chemistry Tutor</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 Avery Ranney</span>
+      <span><a href="mailto:agranney94@gmail.com">agranney94@gmail.com</a> · <a href="https://www.linkedin.com/in/avery-ranney/" target="_blank" rel="noopener">LinkedIn</a></span>
+    </div>
+  </footer>
+</body>
+</html>
